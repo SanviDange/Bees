@@ -29,7 +29,7 @@ body {
 /* Honeycomb Rows */
 .row {
   display: flex;
-  margin-top: -3.3vw; 
+  margin-top: -3.5vw; 
 }
 
 .first-row {
@@ -63,6 +63,13 @@ img {
 .bee5 { top: 85%; animation-duration: 7s; animation-direction: alternate-reverse;}
 .bee6 { top: 15%; animation-duration: 4s; }
 .bee7 { top: 25%; animation-duration: 17s; animation-direction: alternate-reverse; }
+.bee8 { top: 5%; animation-duration: 8s; animation-direction: alternate-reverse; }
+.bee9 { top: 85%; animation-duration: 15s; animation-direction: alternate; }
+.bee10 { top: 55%; animation-duration:20s; animation-direction: alternate-reverse; }
+.bee11 { top: 5%; animation-duration: 15s; animation-direction: reverse; }
+.bee12 { top: 85%; animation-duration: 7s; animation-direction: alternate-reverse; }
+.bee13 { top: 55%; animation-duration:13s; animation-direction: reverse; }
+.bee14 { top: 35%; animation-duration:14s; animation-direction: reverse; }
 
 .bee:hover {
   animation: honeycomb 0.7s ease-in-out infinite;
@@ -114,18 +121,26 @@ img {
     .hide-desktop {
     display: none;
   }
+    .hide-tablet {
+    display: none;
+  }
 }
 
 @media (max-width: 1199px) {
   .bee { font-size: 50px; }
   .bee4 { font-size: 40px; }
   .hexagon { width: 13vw; }
+    .hide-tablet {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
-  .bee { font-size: 40px; }
+  .bee { font-size: 30px; }
   .bee4 { font-size: 30px; }
   .hexagon { width: 18vw; }
+  .row { margin-top: -4.5vw; }
+  .offset-row { margin-top: -4.5vw; }
 }
 
 @media (max-width: 480px) {
